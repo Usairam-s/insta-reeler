@@ -7,7 +7,7 @@ import MobileNav from "./MobileNav";
 const Navbar = () => {
   return (
     <>
-      <header className="flex border-b pb-2 items-center my-8 justify-between max-w-6xl mx-auto px-6 ">
+      <header className="flex border-b pb-2 items-center my-4 justify-between max-w-6xl mx-auto px-6 ">
         <NavLink
           href="/"
           title="Insta-Reeler"

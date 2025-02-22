@@ -11,13 +11,13 @@ const Footer = () => {
         <NavLink
           href="/"
           title="Insta-Reeler"
-          className="text-2xl text-primary font-bold no-underline"
+          className="text-xl text-primary font-bold no-underline"
         />
         <div>
           {/* <NavLink href="/insta" title="Instagram" />
           <NavLink href="/facebook" title="Facebook" />
           <NavLink href="/tiktok" title="Tiktok" /> */}
-          <p>Made with ♥️ by Usairam</p>
+          <p className="text-sm">Made with ♥️ by Usairam</p>
         </div>
         {/* Show Mobile Nav here */}
         {/* <MobileNav /> */}
