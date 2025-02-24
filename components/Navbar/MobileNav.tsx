@@ -1,3 +1,5 @@
+"use client";
+import { useState } from "react";
 import {
   Sheet,
   SheetContent,
@@ -6,39 +8,27 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
-import NavLink from "./NavLink";
-import { ThemeToggler } from "../theme/ThemeToggler";
 
 const MobileNav = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="md:hidden">
-      <Sheet>
-        <SheetTrigger>
+      <Sheet open={isOpen} onOpenChange={setIsOpen}>
+        <SheetTrigger onClick={() => setIsOpen(true)}>
           <Menu />
         </SheetTrigger>
         <SheetContent>
-          <div className="-mt-2">
-            <ThemeToggler />
-          </div>
-
           <SheetHeader>
-            <SheetDescription className="flex pt-40 flex-col gap-4 items-center">
-              <NavLink
-                href="/insta"
-                title="Instagram"
-                className="block py-2 text-2xl"
-              />
-
-              <NavLink
-                href="/facebook"
-                title="Facebook"
-                className="block py-2 text-2xl"
-              />
-              <NavLink
-                href="/tiktok"
-                title="Tiktok"
-                className="block py-2 text-2xl"
-              />
+            <SheetDescription className="flex pt-28 flex-col gap-4 items-center">
+              <a
+                href="http://insta-post-maker.netlify.app"
+                target="_blank"
+                onClick={() => setIsOpen(false)}
+                className="border p-2 rounded-md text-sm hover:bg-primary hover:font-medium hover:text-white"
+              >
+                Try Insta Post Maker ↗
+              </a>
             </SheetDescription>
           </SheetHeader>
         </SheetContent>
