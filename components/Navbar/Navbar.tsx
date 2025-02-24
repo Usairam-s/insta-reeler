@@ -11,7 +11,7 @@ const Navbar = () => {
         <NavLink
           href="/"
           title="Insta-Reeler"
-          className="text-3xl text-primary font-bold no-underline"
+          className="text-2xl text-primary font-bold no-underline"
         />
         <div>
           {/* <NavLink href="/insta" title="Instagram" />
