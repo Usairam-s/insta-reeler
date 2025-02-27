@@ -10,7 +10,7 @@ const Navbar = () => {
       <header className="flex border-b pb-2 items-center my-4 justify-between max-w-6xl mx-auto px-6 ">
         <NavLink
           href="/"
-          title="Insta-Reeler"
+          title="Free Insta Reels"
           className="text-2xl text-primary font-bold no-underline"
         />
         {/* <div> */}

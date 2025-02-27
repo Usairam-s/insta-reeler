@@ -12,8 +12,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Insta Reeler",
-  description: "Download Instagram reels easily",
+  title: "Free Insta Reels ",
+  description: "Download Instagram reels free",
 };
 
 export default function RootLayout({

@@ -15,7 +15,7 @@ const Hero = () => {
 
       <div className="max-w-3xl px-6 mx-auto pt-24 flex flex-col gap-14">
         <h2 className="text-center font-semibold lg:text-5xl md:text-4xl text-3xl">
-          Download Instagram Videos
+          Free Instagram Reels Downloader Online
         </h2>
         {/* Search Bar */}
         <SearchBar />
